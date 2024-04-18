@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: black;
+}
+
+body {
+    padding-top: 70px; /* Compensar a altura da barra de navegação */
+}
+
+
+.container {
+    position: relative;
+}
+
+.Caixa-principal {
+    height: 100vh;
+    width: 100%;
+}
+
+.Caixa-principal img {
+    width: 53%;
+    height: auto;
+    border-radius: 10px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 70px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.content-creations {
+    color: #fff;
+    font-size: 20px;
+}
+
+.content-creations span {
+    color: #d946ef;
+}
+.nome-agencia span{
+    color: #d946ef;
+}
+
+li {
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    font-size: 15x;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.link-menu:hover {
+    color: #d946ef;
+    transition: 0.5s;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contato {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d946ef;
+}
+
+.nome-agencia {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+.bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color :#fff;
+    border-radius: 50%; /* Faz a bola parecer um círculo */
+    margin-right: 5px; /* Adiciona um espaço entre a bola e o texto */
+}
+
+
+h1,
+h2 {
+    color: #fff;
+    font-size: 75px;
+}
+
+h2 span {
+    color: #d946ef;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 5px 5%;
+}
+
+section img {
+    height: 250px;
+    border-radius: 20%;
+    margin-right: 30px;
+}
+
+section div h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
+section div p {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+section div button {
+    color: #fff;
+    background-color: #d946ef;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+section div button:hover {
+    border: 3px solid #fff;
+    transition: 0.5s;
+}
+
+.video-container {
+    margin: 130px;
+    margin-top: 40px;
+}
+
+.video-container iframe {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #fff;
+
+    /* outras estilizações comuns */
+}
+
+.curtos {
+    text-align: center;
+}
+
+.video-container-curtos {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container-curtos video {
+    margin: 0 10px;
+    border: 2px solid #fff;
+
+    /* Ajuste conforme necessário */
+}
+
+.video-container-overlays {
+    display: flex;
+    justify-content: center;
+
+}
+
+.vlogs h2,
+.gameplays h2,
+.thumbs h2,
+.curtos h2,
+.overlays h2 {
+    color: #fff;
+    font-size: 75px;
+    text-align: center;
+
+}
+
+.thumbs {
+    margin: auto;
+    text-align: center;
+    margin-left: 5px;
+
+}
+
+.thumbs img {
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 1px;
+    border: 2px solid #fff;
+}
+
+footer {
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h5 {
+    color: #fff;
+    font-size: 30px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.social img {
+    height: 30px;
+    color: #d946ef;
+}
+
+.social a {
+    cursor: pointer;
+
+}
+
+.social a :hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+/* Adicionando regra de mídia para telas menores */
+@media screen and (max-width: 768px) {
+    .Caixa-principal img {
+        width: 100%;
+        float: none;
+        margin: 20px auto;
+        /* Centralizar a imagem */
+    }
+    section {
+        display: flex;
+        align-items: center;
+        padding: 20px 5%; 
+        margin-top: -300px;/* Ajustar o espaçamento interno das seções */
+    }
+
+    nav {
+        flex-direction: column;
+        /* Alterar a direção do flexbox para coluna */
+        align-items: center;
+        /* Centralizar os itens */
+        padding-top: 0;
+        /* Remover espaço superior */
+    }
+
+    ul {
+        display: flex;
+        /* Alterar a exibição para flexível */
+        flex-direction: row;
+        /* Alterar a direção do flexbox para linha */
+        justify-content: center;
+        /* Centralizar os itens na horizontal */
+        margin-top: 20px;
+        /* Adicionar espaço acima da lista */
+    }
+
+    li {
+        display: block;
+        /* Alterar a exibição dos itens para bloco */
+        text-align: center;
+        /* Centralizar o texto */
+        margin-bottom: 10px;
+        /* Adicionar espaço entre os itens */
+    }
+
+    .nome-agencia {
+        position: static;
+        /* Remover posição absoluta */
+        text-align: center;
+        /* Centralizar o texto */
+        margin-top: 20px;
+    }
+    h1,
+    h2 {
+        font-size: 30px;
+        /* Reduzir o tamanho da fonte */
+    }
+    .thumbs h2{
+        font-size: 60px;
+    }
+    .gameplays h2{
+        font-size: 60px;
+    }
+
+    section {
+        flex-direction: column;
+        /* Alterar a direção do flexbox para coluna */
+        text-align: center;
+        /* Centralizar o conteúdo */
+    }
+
+    section img {
+        height: auto;
+        /* Permitir que a imagem se ajuste à largura */
+        margin: 0;
+        /* Remover margem */
+    }
+
+    section div {
+        padding: 0 20px;
+        /* Adicionar preenchimento aos lados */
+    }
+
+    section div h2 {
+        font-size: 30px;
+        /* Reduzir o tamanho da fonte */
+    }
+
+    section div p {
+        font-size: 16px;
+        /* Reduzir o tamanho da fonte */
+    }
+
+    section div button {
+        height: 35px;
+        /* Reduzir a altura do botão */
+        width: 130px;
+        /* Reduzir a largura do botão */
+        font-size: 14px;
+        /* Reduzir o tamanho da fonte */
+    }
+
+    .video-container {
+        margin: 20px;
+        /* Reduzir a margem */
+    }
+
+    .video-container iframe {
+        width: 100%;
+        /* Fazer o vídeo ocupar a largura total */
+    }
+
+    .video-container-curtos {
+        flex-direction: column;
+        /* Alterar a direção do flexbox para coluna */
+    }
+
+    .video-container-curtos video {
+        margin: 10px auto;
+        /* Centralizar os vídeos e adicionar espaço entre eles */
+    }
+}
+
+
+
+footer {
+    padding-top: 50px;
+    /* Reduzir o espaço superior */
+    padding-bottom: 50px;
+    /* Reduzir o espaço inferior */
+}
+
+
+/* Adicionando regra de mídia para telas ainda menores */
+@media screen and (max-width: 480px) {
+    section div h2 {
+        font-size: 24px;
+        /* Reduzir o tamanho da fonte ainda mais */
+    }
+
+    section div p {
+        font-size: 7px;
+        /* Reduzir o tamanho da fonte ainda mais */
+    }
+
+    section div button {
+        height: 30px;
+        /* Reduzir a altura do botão ainda mais */
+        width: 110px;
+        /* Reduzir a largura do botão ainda mais */
+        font-size: 12px;
+        /* Reduzir o tamanho da fonte ainda mais */
+    }
+
+
+
+
+}
