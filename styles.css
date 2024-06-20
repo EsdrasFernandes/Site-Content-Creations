@@ -146,6 +146,9 @@ section div button:hover {
 .video-container {
     margin: 130px;
     margin-top: 40px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .video-container iframe {
@@ -163,6 +166,8 @@ section div button:hover {
 .video-container-curtos {
     display: flex;
     justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .video-container-curtos video {
@@ -175,7 +180,12 @@ section div button:hover {
 .video-container-overlays {
     display: flex;
     justify-content: center;
-
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.video-container-overlays video {
+    width: 420px;
+    border: 2px solid #fff;
 }
 
 .vlogs h2,
@@ -186,6 +196,7 @@ section div button:hover {
     color: #fff;
     font-size: 75px;
     text-align: center;
+    margin-top: 50p;
 
 }
 
@@ -193,7 +204,7 @@ section div button:hover {
     margin: auto;
     text-align: center;
     margin-left: 5px;
-
+    gap: 10px;
 }
 
 .thumbs img {
@@ -252,6 +263,8 @@ footer p {
     section {
         display: flex;
         align-items: center;
+        text-align: center;
+        flex-direction: column;
         padding: 20px 5%; 
         margin-top: -300px;/* Ajustar o espaçamento interno das seções */
     }
@@ -393,8 +406,6 @@ footer {
         font-size: 12px;
         /* Reduzir o tamanho da fonte ainda mais */
     }
-
-
 
 
 }
